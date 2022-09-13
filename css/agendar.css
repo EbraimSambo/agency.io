@@ -1,0 +1,139 @@
+.update-profile {
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background: url(../assets/img/g-4.jpg);
+    overflow: hidden !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.update-profile h1 {
+    color: #fff;
+    font-size: 3.6rem;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.358);
+}
+
+.update-profile form {
+    padding: 20px;
+    background: transparent;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    text-align: center;
+    width: 900px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.update-profile form .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    gap: 15px;
+}
+
+.update-profile form .flex .inputBox {
+    width: 49%;
+}
+
+.update-profile form .flex .inputBox .box,
+select {
+    width: 100%;
+    border-radius: 5px;
+    padding: 12px 13px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 10px;
+    border: 2px solid var(--color-yelow);
+    background: #cccccc6b;
+    letter-spacing: .2rem;
+}
+
+.update-profile form input::placeholder,
+select,
+input [type="date"] {
+    color: #fff !important;
+    font-weight: 560;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.358);
+}
+
+option {
+    color: #000;
+}
+
+.update-profile form a {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: rgba(0, 255, 0, 0.936);
+    font-weight: 700;
+}
+
+.update-profile form a:hover {
+    text-decoration: underline;
+}
+
+.btn-agendar {
+    padding: 6px 16px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    display: inline-block;
+    border-radius: .3rem;
+    color: var(--color-ligth);
+    background: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.358);
+}
+
+.btn-agendar:hover {
+    color: var(--color-yelow);
+    background: transparent;
+    border: 2px solid var(--color-yelow);
+}
+
+.aviso {
+    padding: 10px;
+    background: rgba(0, 255, 0, 0.66);
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+#load {
+    margin: 2rem auto;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #0f0;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: load .6s linear infinite;
+}
+
+@keyframes load {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 991px) {
+    .update-profile form {
+        width: 700px;
+    }
+}
+
+@media (max-width:650px) {
+    .update-profile form .flex {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .update-profile form .flex .inputBox {
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .caixa-container {
+        width: 400px;
+    }
+}

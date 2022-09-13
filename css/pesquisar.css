@@ -1,0 +1,151 @@
+    .pesquisar-form input {
+        width: 100%;
+        padding-right: 1rem;
+        font-size: 1.7rem;
+        text-transform: none;
+        color: #666;
+    }
+    
+    .pesquisar-form {
+        border-radius: 5rem;
+        height: 5rem;
+        width: 50rem;
+        padding: 0 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #fff;
+        border: 2px solid #222;
+    }
+    
+    .pesquisar-form label {
+        font-size: 2rem;
+        color: var(--color-primary);
+        cursor: pointer;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    p {
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+    }
+    
+    main {
+        margin-top: 10rem;
+        padding: 0 9%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .table-container {
+        padding: 0 10% 10% 10%;
+        margin: 40px auto auto 0;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    table thead {
+        background: var(--color-primary);
+    }
+    
+    table thead tr th {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.34px;
+        color: #fff;
+        padding: 14px;
+        vertical-align: top;
+        border: 1px solid #ccc;
+    }
+    
+    table tbody tr td {
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 0.34px;
+        color: var(--color-primary);
+        padding: 8px;
+        text-align: center;
+        border: 1px solid #ccc;
+    }
+    
+    table .text_open {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.34px;
+        color: red;
+    }
+    
+    table tbody tr td .btn-table {
+        line-height: 35px;
+        background: var(--color-yelow);
+        text-decoration: none;
+        width: 130px;
+        display: inline-block;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        border: 1px solid transparent;
+        font-size: 14px;
+    }
+    
+    @media (max-width:767px) {
+        body {
+            padding: 2rem;
+        }
+        table thead {
+            display: none;
+        }
+        table,
+        tbody,
+        table tr,
+        table td {
+            display: block;
+            width: 100%;
+        }
+        table tr {
+            margin-bottom: 15px;
+        }
+        table td {
+            text-align: right;
+            padding-left: 50%;
+            position: relative;
+        }
+        table td::before {
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            width: 50%;
+            padding-left: 15px;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .pesquisar-form {
+            width: 30rem;
+        }
+        main {
+            padding: 0 2rem;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.4rem;
+        }
+    }

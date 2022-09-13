@@ -1,0 +1,338 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style-type: none;
+     letter-spacing: .1rem;
+     transition: .2s all ease;
+     outline: none;
+     border: none;
+ }
+ 
+ @font-face {
+     font-family: 'fontwesone';
+     src: url(../fonts/Roboto/Roboto-Regular.ttf) format('opentype');
+     font-weight: normal;
+ }
+ 
+ :root {
+     --color-primary: #0a2936;
+     --color-ligth: #fff;
+     --color-yelow: #e1b30c;
+ }
+ 
+ html {
+     font-size: 65.6%;
+ }
+ 
+ .titulos {
+     font-size: 4rem;
+     text-align: center;
+     background: var(--color-primary);
+     color: var(--color-ligth);
+ }
+ 
+ section,
+ footer {
+     padding: 2rem 9%;
+ }
+ 
+ body {
+     font-family: 'fontwesone';
+ }
+ 
+ .logo {
+     font-size: 2rem;
+     font-weight: bold;
+     color: var(--color-yelow);
+     transform: translateX(-3px);
+ }
+ 
+ .header {
+     display: flex;
+     padding: 2rem 8%;
+     justify-content: space-between;
+     align-items: center;
+     right: 0;
+     left: 0;
+     position: fixed;
+     background: var(--color-primary);
+     top: 0;
+     height: 58px;
+     z-index: 600;
+     box-shadow: .5rem .5rem 0 rgba(34, 34, 34, 0.301);
+     width: 100%;
+ }
+ 
+ .header .navbar ul li {
+     margin-right: 12px;
+     font-size: 1.8rem;
+     color: var(--color-ligth);
+     font-weight: bold;
+     display: inline-block;
+ }
+ 
+ .header .navbar ul li a {
+     color: var(--color-ligth);
+ }
+ 
+ .header .navbar a:hover {
+     color: var(--color-yelow);
+ }
+ 
+ .btn-inscricao {
+     padding: 5px 9px;
+     font-weight: 600;
+     font-size: 1.6rem;
+     display: inline-block;
+     border-radius: .3rem;
+     color: var(--color-yelow);
+     background: transparent;
+     border: 2px solid var(--color-yelow);
+ }
+ 
+ .btn-inscricao:hover {
+     border: 2px solid var(--color-ligth);
+     background: transparent;
+     color: #ffff;
+ }
+ 
+ .header .icons-mobile {
+     display: none;
+ }
+ 
+ .home {
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     height: 100vh;
+     padding-top: 10rem;
+     width: 100%;
+     background: url(../assets/img/g-6.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     overflow: hidden;
+ }
+ 
+ .home .conteudo {
+     text-align: center;
+     padding: 2rem 2rem;
+     transform: translateY(50px);
+ }
+ 
+ .home .conteudo h2 {
+     font-size: 4.5rem;
+     color: #111;
+     text-transform: uppercase;
+     text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .1);
+     margin-bottom: 19px;
+ }
+ 
+ .home .conteudo p {
+     font-size: 2.5rem;
+     color: #222;
+     padding: .5rem 0;
+     margin-bottom: 12px;
+     font-weight: bold;
+     text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .1);
+ }
+ 
+ .btn {
+     font-size: 1.8rem;
+     color: #222;
+     padding: .5rem 2rem;
+     margin-top: 1rem;
+     background: var(--color-yelow);
+     display: inline-block;
+     font-weight: 700;
+     font-family: cursive;
+ }
+ 
+ .btn:hover {
+     border: 2px solid var(--color-yelow);
+     background: transparent;
+     color: var(--color-yelow);
+ }
+ 
+ .gallery .box-container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+ }
+ 
+ .gallery .box-container .box {
+     overflow: hidden;
+     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+     border: .2rem solid #fff;
+     border-radius: .1rem;
+     flex: 1 1 30rem;
+     height: 25rem;
+     position: relative;
+ }
+ 
+ .gallery .box-container .box img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+ }
+ 
+ .precos {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+     gap: 2rem;
+ }
+ 
+ .precos .itens {
+     border: 1px solid var(--color-ligth);
+     text-align: center;
+ }
+ 
+ .precos .itens .cabecalho {
+     padding: 12px 0;
+     background: #222;
+     text-align: center;
+     border-bottom: 1px solid var(--color-ligth);
+ }
+ 
+ .precos .itens .cabecalho h2 {
+     color: #fff;
+     font-size: 2.3rem;
+ }
+ 
+ .precos .itens .body {
+     padding: 2.5rem 0;
+     text-align: center;
+     padding-bottom: 18px;
+ }
+ 
+ .precos .itens .body h3 {
+     color: #fff;
+     font-size: 1.6rem;
+ }
+ 
+ .precos .itens .body p {
+     font-size: 1.5rem;
+     color: var(--color-yelow);
+     margin: .4rem 0;
+ }
+ 
+ .precos .itens .footer {
+     padding-bottom: 12px;
+     background: #222;
+     text-align: center;
+     border-top: 1px solid var(--color-ligth);
+ }
+ 
+ footer {
+     text-align: center;
+     background: var(--color-primary);
+ }
+ 
+ footer .icones {
+     padding: 1rem 0;
+ }
+ 
+ footer .icones a {
+     font-size: 1.5rem;
+     margin-left: 10px;
+     color: var(--color-yelow);
+     padding: 10px;
+     border: 4px solid var(--color-yelow);
+     border-radius: 50%;
+     font-weight: bold;
+ }
+ 
+ footer .icones a:hover {
+     transform: translateY(-12px);
+     border-color: var(--color-ligth);
+     color: var(--color-ligth);
+ }
+ 
+ footer .divisao-credite {
+     padding-bottom: 1rem;
+     padding-top: 1rem;
+ }
+ 
+ footer .divisao-credite h2 {
+     font-size: 2rem;
+     color: var(--color-ligth);
+ }
+ 
+ footer .divisao-credite span {
+     color: var(--color-yelow);
+ }
+ 
+ @media (max-width: 991px) {
+     html {
+         font-size: 55.5%;
+     }
+     .header,
+     footer {
+         padding: 3rem;
+     }
+     .home {
+         height: 85vh;
+     }
+     section {
+         padding: 3rem;
+     }
+ }
+ 
+ @media (max-width: 786px) {
+     .header {
+         border-bottom: 1px solid var(--color-ligth);
+     }
+     .header .navbar {
+         position: absolute;
+         background: #e1b30c;
+         top: -400%;
+         width: 100%;
+         right: 0;
+         left: 0;
+         transition: none;
+         border-bottom: 1px solid var(--color-ligth);
+     }
+     .header .navbar.activar {
+         top: 102%;
+     }
+     .header .navbar ul li {
+         display: block;
+         padding-left: 3rem;
+         margin-bottom: 1rem;
+         padding-top: 1rem;
+     }
+     .header .navbar ul li a {
+         color: #222;
+     }
+     .btn-inscricao,
+     #serch-desketop {
+         display: none;
+     }
+     .header .icons-mobile {
+         font-size: 2rem;
+         color: #e1b30c;
+         margin-right: 12px;
+         display: inline-block;
+     }
+     .header .icons-mobile i {
+         font-size: 2rem;
+         color: #e1b30c;
+         padding-right: 9px;
+         display: inline-block;
+     }
+     body.activar {
+         background: #1313135f;
+         z-index: 1000;
+     }
+     .baza {
+         display: none;
+     }
+ }
+ 
+ @media (max-width: 469px) {
+     html {
+         font-size: 50%;
+     }
+ }

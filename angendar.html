@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/agendar.css">
+    <title>Agendar</title>
+</head>
+
+<body>
+    <div class="update-profile">
+        <form>
+
+            <div class="aviso">
+                <h3>Prenche o campo email</h3>
+            </div>
+            <h1>Preenche com os seus dados </h1>
+
+            <div class="flex">
+                <div class="inputBox">
+
+                    <input type="text" name="nome" placeholder="Nome Completo" class="box">
+
+                    <input type="email" name="email" placeholder="Seu email" class="box">
+                    <input type="email" name="email" placeholder="Idade" class="box">
+
+                    <input type="date" style="cursor: text;" name="data" class="box ">
+                    <input type="text" name="idade" placeholder="Núnmero do Bilhete de Indentidade" class="box ">
+                </div>
+                <div class="inputBox ">
+
+
+                    <input type="text" name="idade" placeholder="Terminal" class="box ">
+
+                    <input type="Morada" name="morada" placeholder="Residência" class="box ">
+                    <select name="turno" id=" ">
+                        <option value="1" disabled>Nacionalidade</option>
+    
+                        <option value="2">Nacional</option>
+                        <option value="2">Esctrangeira</option>
+                    </select>
+
+                    <select name="turno" id=" ">
+                          <option value="1">Plano Mini</option>
+                          <option value="1">Plano Morado</option>
+                          <option value="1">Plano Premium</option>
+                         
+                      </select>
+                    <input type="text" name="idade" placeholder="País de Distino" class="box ">
+                </div>
+
+
+            </div>
+            <input type="submit" class="btn-agendar" name="enviar" value="Agendar Viagem">
+            <a href="index.html" style="display: block;" class="delete-btn ">Voltar para Página Inicial</a>
+            <div id="load"></div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
