@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scholl</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <style>
+        #desaparece-deskop {
+            display: none;
+        }
+        
+        #desaparece {
+            display: inline-block;
+        }
+        
+        @media (max-width:790px) {
+            #desaparece-deskop {
+                display: inline-block;
+            }
+            #desaparece {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <span>Angência de Viagens</span>
+        </div>
+
+        <nav class="navbar">
+            <!--<a href="#">Home</a>
+            <a href="#">Informações</a>
+            <a href="#">Cursos</a>
+            <a href="#" class="fas fa-search"></a>-->
+            <ul>
+                <li><a href="">Home</a></li>
+                <li> <a href="#Planos">Planos</a></li>
+                <li><a href="">Informações</a></li>
+
+                <li>
+                    <a href="angendar.html" id="serch-desketop" class="fas fa-search"></a>
+                </li>
+            </ul>
+
+        </nav>
+        <div>
+            <a href="#" class="btn-inscricao">Angendar</a>
+        </div>
+
+        <div class="icons-mobile">
+            <a href="pesquisa.html"><i id="seach-mobilie" class="fas fa-search"></i></a>
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="conteudo">
+            <h2>Angência de Viagens</h2>
+            <p>A melhor agência de viagens Angolanas
+                <br class="baza">Mudando vidas rotineiras.</p>
+            <a href="#" id="desaparece-deskop" class="btn">Angendar</a>
+            <a href="#gallery" id="desaparece" class="btn">Começar</a>
+        </div>
+    </section>
+
+    <section style="background: var(--color-primary);" class="gallery" id="gallery">
+
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="assets/img/g-1.jpg" alt="">
+
+            </div>
+            <div class="box">
+                <img src="assets/img/g-2.jpg" alt="">
+
+            </div>
+            <div class="box">
+                <img src="assets/img/g-3.jpg" alt="">
+
+            </div>
+            <div class="box">
+                <img src="assets/img/g-4.jpg" alt="">
+
+            </div>
+            <div class="box">
+                <img src="assets/img/g-5.jpg" alt="">
+
+            </div>
+            <div class="box">
+                <img src="assets/img/g-6.jpg" alt="">
+
+            </div>
+            <div class="box">
+                <img src="assets/img/g-7.jpg" alt="">
+
+            </div>
+            <div class="box">
+                <img src="assets/img/g-8.jpg" alt="">
+
+            </div>
+            <div class="box">
+                <img src="assets/img/g-9.jpg" alt="">
+
+            </div>
+
+        </div>
+
+    </section>
+    <h1 class="titulos">Planos de Ferias</h1>
+    <section id="Planos" class="precos" style="background: var(--color-primary);">
+
+        <div class="itens">
+            <div class="cabecalho">
+                <h2>Min</h2>
+            </div>
+            <div class="body">
+                <h3>80.000kz</h3>
+                <p>Durante:</p>
+                <p>2 Semanas</p>
+            </div>
+            <div class="footer">
+                <a href="#" class="btn">Aderir</a>
+            </div>
+        </div>
+        <div class="itens">
+            <div class="cabecalho">
+                <h2>Moderado</h2>
+
+            </div>
+            <div class="body">
+                <h3>200.900kz</h3>
+                <p>Durante:</p>
+                <p>1 Mes</p>
+            </div>
+            <div class="footer">
+                <a href="#" class="btn">Aderir</a>
+            </div>
+        </div>
+        <div class="itens">
+            <div class="cabecalho">
+                <h2>Premiumn</h2>
+
+            </div>
+            <div class="body">
+                <h3>500.000kz</h3>
+                <p>Durante:</p>
+                <p> 3 Meses</p>
+            </div>
+            <div class="footer">
+                <a href="#" class="btn">Aderir</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="icones">
+            <a href="#" class="fas fa-phone"></a>
+            <a href="#" class="fab fa-whatsapp"></a>
+            <a href="#" class="fab fa-pinterest-p"></a>
+        </div>
+
+        <div class="divisao-credite">
+            <h2> &copy; Todos direitos Reservados a <span>WebSoluções</span></h2>
+        </div>
+    </footer>
+
+    <!-- gallery section ends -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
